@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="parallelBrowserSuite" parallel = "tests">
+
+  <test name="safariBrowserTest">
+  <parameter name="browser" value="safari"/>
+  <classes>
+      <class name="parallelBrowserDemo.verifyTitle"/>   
+    </classes>
+  </test> <!-- Test -->
+  
+  <test name="chromeBrowserTest">
+  <parameter name="browser" value="chrome"/>
+  <classes>
+      <class name="parallelBrowserDemo.verifyTitle"/>   
+    </classes>
+  </test> <!-- Test -->
+  
+</suite> <!-- Suite -->

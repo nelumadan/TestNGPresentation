@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  
+	<test name="Fruits">   
+		<parameter name="fruit1" value="mango"/>  
+		<parameter name="fruit2" value="orange"/>  
+			<classes>  
+				<class name= "parametersTestNGDemo2.fruits"/>  
+			</classes>  
+	</test>  
+	
+	<test name="Vegetables">   
+		<parameter name="veg1" value="Cauliflower"/>  
+		<parameter name="veg2" value="Ladyfinger"/>  
+			<classes>  
+				<class name= "parametersTestNGDemo2.vegetables"/>  
+			</classes>  
+	</test> 
+
+</suite> <!-- Suite -->
